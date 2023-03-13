@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Website </title>
+	
+<style>
+body{
+	background-color: white;
+	overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+	margin:auto;
+}
+div.header {
+	background-color:lightblue;
+	border-bottom-style: solid;
+    border-bottom-width: 1px;
+	border-bottom-color: gray;
+}
+h1 {
+	display: inline;
+	color: black;
+	margin: auto;
+	
+	font-size: 55px;
+}
+img {
+  display: block;
+  margin-left: 700px;
+  width: 7%;
+  height: 5%;
+}
+div.header ul {
+  display: inline;
+  margin-left: 1050px; 
+ }
+ div.header li {
+	display:inline;
+    
+}
+a { 
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+}
+a:hover{
+	color: blue;
+}
+div.afeed{
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 250px;
+    height: 800px;
+	margin:5px;
+}
+div.afeed ul{
+	list-style: none;
+	padding-left:none;
+	font-size:20px;
+	display: inline;
+}
+
+div.afeed li{
+	margin-top:5px;
+	justify-content: left;
+}
+div.afeed h2{
+	font-size: 35px;
+}
+
+
+div.a, div.b{
+display:flex;	
+
+}
+div.a1, div.b1{
+	border-right-style:solid;
+	border-color: white;
+	border-width: 5px;
+}
+div.a1, div.b1{
+	
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 5%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+}
+div.b1{
+	margin-left:50px;
+	margin-top: 150px;
+}
+
+div.a1 h2, div.b1 h2{
+	color: white;
+	font-size: 50px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	white-space: nowrap;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+div.a2,div.b2{
+	border-style:solid;
+	border-left:none;
+	border-color: white;
+	height: 294px;
+	width: 75%;
+}
+
+div.a2 {
+	margin-top: 50px;
+}
+div.b2{
+	margin-top: 150px;
+}
+
+</style>
+		
+</head>
+
+<body>
+
+<div class = "header">
+	<h1 font-size=> WEBSITE </h1>
+
+	<ul>
+		<li><a href="#About_Me"> HOME </a> </li>
+		<li><a href="#About_Me"> EXPLORE </a> </li>
+		<li><a href="signIn.html"> SIGN IN</a> </li>
+	</ul>
+</div>	
+
+<div class = "afeed">
+    <h2> Activity Feed </h2>
+    
+	<ul>
+		<li><a href="#About_Me"> Followers &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><br>
+		<li><a href="#About_Me"> Following &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><br>
+		<li><a href="#About_Me"> Create Post &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><br>
+	</ul>
+</div>
+
+
+
+<div id="root"></div>
+<script src="homePage.js" type="text/babel"></script>
+<!--<div class = "a">
+	<div class = "a1">
+		<h2> About Me </h2>
+		
+	</div>
+	<div class = "a2">
+		
+	</div>	
+</div>
+
+<div class = "b">
+	<div class = "b1">
+		<h2> Projects </h2>
+		
+	</div>
+	<div class = "b2">
+		
+	</div>	
+</div>-->
+</body>
+
+</html>

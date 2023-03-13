@@ -1,0 +1,71 @@
+.postWrap{
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    height: 70%;  
+    position: absolute;
+    top:55%;
+    left:50%;
+    
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    /*margin-top:25%;*/
+    background-color: white;
+}
+
+.postWrap{
+    border-radius: 10px;
+}
+
+
+.user{
+    height: 10%;
+    background-image: linear-gradient(to right, rgb(184, 106, 230), rgb(82, 6, 117));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.userImageWrap{
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    border-style: solid;
+    padding: 8px;
+    margin-left: 7px;
+    background-color: white;
+}
+
+.userImageWrap > img{
+    width: 40px;
+}
+
+.post{
+    height: 60%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.commLikes{
+    /*border-style: solid;*/
+    height:15%;
+}
+.text{
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.likes > img, .comments > img, .save > img{
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+}
+
+.likes, .comments, .save{
+    border: none;
+    
+    background-color: inherit;
+    cursor: pointer;
+}
+

@@ -1,0 +1,115 @@
+body{
+	overflow: auto;
+    font-family: 'K2D', sans-serif;
+	margin:auto;
+    background-image: linear-gradient(to right, rgb(37, 19, 192), rgb(38, 4, 100));
+}
+header {
+    /*box-shadow: 0px 5px 5px rgb(211,211,211);*/
+    background-color: lightblue;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList{
+   list-style: none;
+   display:flex;
+
+}
+/*.signHide{
+    margin-left: 2000px;
+}*/
+h1{
+    font-size:30px;
+    padding: 10px;
+}
+.navList > li{
+    padding:10px;
+}
+.sign{
+    color:brown;  
+    transition: margin-left 1s;
+}
+.signHide{
+    margin-left: 2000px;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+a { 
+	text-decoration: none;
+	color: white;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 30px;
+}
+.navList > li > a > small:hover{
+	color: blue;
+}
+.navList > li  > big{
+    font-size:30px;
+}
+.aList{
+    list-style: none;
+	margin-top:0px;
+    transition: margin-left 1s;
+    
+}
+
+.aList > li > a:hover{
+    color: blue;
+    transition: color 0.2s ease-in-out;
+}
+div.afeed h2{
+	font-size: 25px;
+    
+}
+.afeedContainer{
+    width:300px;
+    height: 100%;
+    /*position: relative;*/
+   
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(16, 34, 105), rgb(75, 10, 148));
+    padding: 20px 25px;
+    width: 15px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    margin-left:250px;
+    transition: margin-left 1s;
+    overflow: hidden;
+}
+.afeed{
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 250px;
+	transition: width 1s;
+    background-image: linear-gradient(to right, rgb(16, 34, 105), rgb(75, 10, 148));
+    height: 100%;
+    overflow: hidden;
+}
+.hidden{
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 0px;
+	transition: width 1s;
+}  
+.hidden2{
+    margin-left: -250px;
+}
+.hiddenBtn{
+    margin-left: 0px;
+}

@@ -1,0 +1,76 @@
+body{
+	background-color: white;
+	overflow: auto;
+    font-family: 'K2D', sans-serif;
+    overflow-x: hidden;
+}
+div.wrapper{
+    /*margin-left:auto;
+    margin-right:auto;*/
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+div.signin{
+    width:300px;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    background-image: linear-gradient(to right, rgb(5, 20, 83), rgb(56, 3, 116));
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+#signin-text, #signup-text{
+    
+    margin-left: 33.5%;
+    font-size: 25px;
+}
+div.signin form{
+    margin-left:60px;
+    margin-top: 50px;
+}
+
+/*sign in and up buttons */
+#signin, #signupb{
+    padding: 10px 65px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(63, 37, 180);
+    color: white;
+    
+}
+#signin{
+    margin-top: 10px;
+    width:184px;
+}
+#signupb{
+    margin-left: 50px;
+    width: 200px;
+}
+#username, #password{
+    background-color: rgb(195, 192, 206);
+    padding: 10px 5px;
+    width:182px;
+    border-radius: 5px;
+}
+#username{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+#password{
+    margin-top: 5px;
+}
+#signup{
+    margin-top: 50px;
+    width: 80%
+}
+#signupb:hover, #signin:hover{
+    background-color: rgb(58, 13, 161);
+    box-shadow: -2.5px 0 20px rgba(218, 120, 8, 0.4);
+}
+#username:hover, #password:hover{
+    background-color: rgb(146, 137, 177);
+    box-shadow: 0 0 20px rgba(218, 120, 8, 0.4);
+}

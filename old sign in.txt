@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> User Sign In </title>
+
+<style>
+body{
+	background-color: white;
+	overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+div.wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:2000px;
+}
+div.header {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+	border-bottom-color: gray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25,97,121);
+}
+h1 {
+	display: inline;
+	color: black;
+	margin: auto;
+	font-size: 55px;
+}
+div.signin{
+    width:300px;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 850px;
+    margin-top: 200px;
+    background-color: rgb(25,97,121);
+}
+div.signin h2{
+    margin-left: 100px;
+}
+div.signin form{
+    margin-left:55px;
+    margin-top: 50px;
+
+}
+#signin{
+    background-color: lightblue;
+
+    padding: 10px 65px;
+}
+#username, #password{
+    background-color: white;
+    padding: 10px 5px;
+}
+#signup{
+    margin-top: 50px;
+    width: 90%;
+}
+#signupb{
+    background-color: lightblue;
+    padding: 10px 65px;
+    margin-left: 25px;
+
+}
+#signupb:hover, #signin:hover, #username:hover, #password:hover{
+    background-color: rgb(170, 199, 209);
+}
+
+
+
+</style> 
+</head>
+
+<body>
+<div class = "wrapper">
+
+    <div class = "header">
+
+        <h1> MATTER<sup style="font-size: 10px; color: white; margin-bottom:5px;"> TM</sup> </h1>
+    
+    </div>
+        
+    <div class = signin>
+    
+        <h2> SIGN IN </h2>
+    
+        <form> <!-- add action later to link with database-->
+            <label id="userlabel"> Username: </label><br>
+            <input type="text" id = "username" name="first"><br><br><br>
+            <label id="passlabel"> Password: </label><br>
+            <input type="text" id = "password" name="last"><br><br>
+            <input id = "signin" type="submit" value="SIGN IN">
+        </form>
+
+        <hr id = "signup">
+        <h2> SIGN UP </h2>
+        <button id="signupb" onclick = "window.location.href='signUp.html'"> CREATE ACCOUNT </button>
+    </div>
+
+
+</div>
+<div id="like_button_container"></div>
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+
+</body>
+    
+
+</html>

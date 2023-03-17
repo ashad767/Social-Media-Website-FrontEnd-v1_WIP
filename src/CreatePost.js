@@ -107,8 +107,6 @@ export default function CreatePost(){
 
 function myFunc(){
     isPost = true;
-    media = document.getElementById("file");
-    alert(media);
 }
 
 

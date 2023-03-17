@@ -1,10 +1,12 @@
 import { useState } from "react"
-import { media } from "./CreatePost";
+import { comment } from "./CreateComment";
 import { useNavigate } from "react-router-dom";
+import { ChangeSign } from "./SignIn";
+
 
 export default function Post(){
     const [like, setLike] = useState(false);
-    const nav = useNavigate();
+    
 
     return(
         <div className = "postWrap">
@@ -18,7 +20,7 @@ export default function Post(){
             
             
             <div className="post">
-                <img src = {media} />
+                
             </div>
 
             <div className="commLikes">
@@ -26,22 +28,9 @@ export default function Post(){
                 <button className = "comments" onClick={SubmitComment}> <img src="../pictures/comment-button.png"/>  </button>
                 <button className = "save"> <img src="../pictures/save-button.png"/>  </button> 
                 <span className="text"> {like ? "1 like(s)" : "0 like(s)"} | 0 comments </span>
+                <div id="comms">  </div>
             </div>
             
-        </div>
-    )
-}
-
-export function CreateComment(){
-    return(
-        <div id="commentBox" hidden>
-            <form onSubmit={ () => {SubmitComment(), nav('/home')}}>
-
-                <label id="caption" >  Comment </label> <br/>
-
-                <textarea type="text" required> </textarea> <br></br>
-                <input type="submit" value="submit"/>
-            </form>
         </div>
     )
 }

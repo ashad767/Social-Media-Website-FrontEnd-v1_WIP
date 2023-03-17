@@ -4,7 +4,7 @@ import Header from "./Header";
 import SideBar from "./SideBar";
 import Post from "./Post";
 import SignIn from "./SignIn";
-import { CreateComment } from "./Post";
+import  CreateComment  from "./CreateComment";
 
 const Layout = () => {
     
@@ -13,8 +13,7 @@ const Layout = () => {
        
             <Header />
             <SideBar />
-            <Post/>
-
+            <Post />
             <CreateComment />
             
 

@@ -29,7 +29,7 @@ export default function SignIn(){
     )
 }
 
-function ChangeSign(){
+export function ChangeSign(){
     document.querySelector(".sign").toggleAttribute("hidden");
     document.querySelector(".change").toggleAttribute("hidden");
     
